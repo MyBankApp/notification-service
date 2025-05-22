@@ -6,6 +6,21 @@ server:
 spring:
   application:
     name: notification-service
+  mail:
+    port: 587
+    protocol: smtp
+    host: smtp.gmail.com
+    username: alext0408@gmail.com
+    password: ennyuzydpnpovync
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+        ssl:
+          trust: smtp.gmail.com
 
 eureka:
   client:
